@@ -1438,6 +1438,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "checkout-kata/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/checkout-kata.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/checkout-kata.dll": {}
+        }
       }
     }
   },
@@ -5200,45 +5210,56 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "checkout-kata/1.0.0": {
+      "type": "project",
+      "path": "../checkout-kata/checkout-kata.csproj",
+      "msbuildProject": "../checkout-kata/checkout-kata.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "checkout-kata >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dave.lobban\\.nuget\\packages\\": {},
+    "C:\\Users\\jack.tinsley\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\s-gh\\checkout-kata\\checkout-kataTests\\checkout-kataTests.csproj",
+      "projectUniqueName": "C:\\Users\\jack.tinsley\\checkout-kata\\checkout-kataTests\\checkout-kataTests.csproj",
       "projectName": "checkout-kataTests",
-      "projectPath": "C:\\s-gh\\checkout-kata\\checkout-kataTests\\checkout-kataTests.csproj",
-      "packagesPath": "C:\\Users\\dave.lobban\\.nuget\\packages\\",
-      "outputPath": "C:\\s-gh\\checkout-kata\\checkout-kataTests\\obj\\",
+      "projectPath": "C:\\Users\\jack.tinsley\\checkout-kata\\checkout-kataTests\\checkout-kataTests.csproj",
+      "packagesPath": "C:\\Users\\jack.tinsley\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jack.tinsley\\checkout-kata\\checkout-kataTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dave.lobban\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jack.tinsley\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Git\\Workspace\\Atmos\\packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jack.tinsley\\checkout-kata\\checkout-kata\\checkout-kata.csproj": {
+              "projectPath": "C:\\Users\\jack.tinsley\\checkout-kata\\checkout-kata\\checkout-kata.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5278,7 +5299,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
